@@ -99,7 +99,7 @@ const Product = () => {
          </div>
          </>
     }
-    
+    console.log(pro_array);
   return (
     <>
 

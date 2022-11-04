@@ -2,6 +2,7 @@ import React from 'react';
 import {Routes,Route} from 'react-router-dom';
 import About from '../pages/About';
 import Cart from '../pages/cart';
+import Checkout from '../pages/checkout';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
@@ -25,7 +26,7 @@ const Allrouter = () => {
 <Route path='/*' element={<Pagenotfound/>}> </Route>
 <Route path='/signin' element={<Formnew/>}> </Route>
 <Route path='/product/:pro_id' element={<PrivateRoute><Singlepageapp/></PrivateRoute>}> </Route>
-
+<Route path="/checkout" element={<Checkout/>}></Route>
 <Route path='/cart' element={<PrivateRoute><Cart/></PrivateRoute>}></Route>
 
 
